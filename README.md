@@ -1,3 +1,17 @@
+My personal template for VCC Packages
+Includes:
+ - Additional github action for updating my main listing
+ - proper packages setup with .asmdef files and everything
+ - Example Scene exporter that copies the example scene into the samples folder
+
+Setup:
+ - Replace all instances of "com.mmmaellon.lower-case-name" with "com.mmmaellon.package-name"
+ - Replace all instances of "STARDENBURDENHARDENBART" with "Upper Case Package Name"
+ - Add "ACTIONTOKEN" secret
+
+
+
+
 # VPM Package Template
 
 Starter for making Packages, including automation for building and publishing them.

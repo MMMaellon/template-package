@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
   push:
     branches: main
-    paths: Packages/com.vrchat.demo-template/**
+    paths: Packages/com.mmmaellon.lower-case-name/**
 
 env:
-  packageName: "com.vrchat.demo-template"
+  packageName: "com.mmmaellon.lower-case-name"
 
 permissions:
   contents: write
@@ -56,3 +56,4 @@ jobs:
             ${{ env.zipFile }}
             ${{ env.unityPackage }}
             Packages/${{ env.packageName }}/package.json
+          prerelease: true
