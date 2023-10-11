@@ -13,6 +13,7 @@ TagManager:
   - UI
   - 
   - 
+<<<<<<< HEAD
   - 
   - 
   - 
@@ -27,6 +28,22 @@ TagManager:
   - 
   - 
   - 
+=======
+  - Interactive
+  - Player
+  - PlayerLocal
+  - Environment
+  - UiMenu
+  - Pickup
+  - PickupNoEnvironment
+  - StereoLeft
+  - StereoRight
+  - Walkthrough
+  - MirrorReflection
+  - reserved2
+  - reserved3
+  - reserved4
+>>>>>>> c8206fa (Initial commit)
   - 
   - 
   - 
