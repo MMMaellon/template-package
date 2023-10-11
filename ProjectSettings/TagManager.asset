@@ -14,6 +14,7 @@ TagManager:
   - 
   - 
 <<<<<<< HEAD
+<<<<<<< HEAD
   - 
   - 
   - 
@@ -29,6 +30,8 @@ TagManager:
   - 
   - 
 =======
+=======
+>>>>>>> f00941b8de62a006d0028b6a85e29007b0db4c70
   - Interactive
   - Player
   - PlayerLocal
@@ -43,7 +46,10 @@ TagManager:
   - reserved2
   - reserved3
   - reserved4
+<<<<<<< HEAD
 >>>>>>> c8206fa (Initial commit)
+=======
+>>>>>>> f00941b8de62a006d0028b6a85e29007b0db4c70
   - 
   - 
   - 

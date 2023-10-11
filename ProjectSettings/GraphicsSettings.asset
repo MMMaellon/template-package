@@ -29,6 +29,7 @@ GraphicsSettings:
     m_Mode: 1
     m_Shader: {fileID: 102, guid: 0000000000000000f000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_AlwaysIncludedShaders:
   - {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 15104, guid: 0000000000000000f000000000000000, type: 0}
@@ -39,6 +40,9 @@ GraphicsSettings:
 =======
   m_AlwaysIncludedShaders: []
 >>>>>>> c8206fa (Initial commit)
+=======
+  m_AlwaysIncludedShaders: []
+>>>>>>> f00941b8de62a006d0028b6a85e29007b0db4c70
   m_PreloadedShaders: []
   m_SpritesDefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000,
     type: 0}
@@ -62,11 +66,16 @@ GraphicsSettings:
   m_FogKeepExp2: 1
   m_AlbedoSwatchInfos: []
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LightsUseLinearIntensity: 0
   m_LightsUseColorTemperature: 0
 =======
   m_LightsUseLinearIntensity: 1
   m_LightsUseColorTemperature: 1
 >>>>>>> c8206fa (Initial commit)
+=======
+  m_LightsUseLinearIntensity: 1
+  m_LightsUseColorTemperature: 1
+>>>>>>> f00941b8de62a006d0028b6a85e29007b0db4c70
   m_LogWhenShaderIsCompiled: 0
   m_AllowEnlightenSupportForUpgradedProject: 0

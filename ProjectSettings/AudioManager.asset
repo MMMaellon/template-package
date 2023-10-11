@@ -9,14 +9,20 @@ AudioManager:
   Doppler Factor: 1
   Default Speaker Mode: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SampleRate: 0
+=======
+  m_SampleRate: 48000
+>>>>>>> f00941b8de62a006d0028b6a85e29007b0db4c70
   m_DSPBufferSize: 1024
-  m_VirtualVoiceCount: 512
+  m_VirtualVoiceCount: 64
   m_RealVoiceCount: 32
-  m_SpatializerPlugin: 
-  m_AmbisonicDecoderPlugin: 
+  m_EnableOutputSuspension: 1
+  m_SpatializerPlugin: OculusSpatializer
+  m_AmbisonicDecoderPlugin: OculusSpatializer
   m_DisableAudio: 0
   m_VirtualizeEffects: 1
+<<<<<<< HEAD
   m_RequestedDSPBufferSize: 1024
 =======
   m_SampleRate: 48000
@@ -30,3 +36,6 @@ AudioManager:
   m_VirtualizeEffects: 1
   m_RequestedDSPBufferSize: 0
 >>>>>>> c8206fa (Initial commit)
+=======
+  m_RequestedDSPBufferSize: 0
+>>>>>>> f00941b8de62a006d0028b6a85e29007b0db4c70
