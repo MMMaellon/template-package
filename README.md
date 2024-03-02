@@ -12,6 +12,6 @@ Setup:
  - Add "ACTIONTOKEN" secret
  - Open in Unity, right-click Packages/com.mmmaellon.lower-case-name/com.mmmaellon.lower-case-name.asmdef and select Create > U# Assembly Definition
 
-[![Use This Template](https://user-images.githubusercontent.com/737888/185467681-e5fdb099-d99f-454b-8d9e-0760e5a6e588.png)](https://github.com/vrchat-community/template-package/generate)
+[![Use This Template](https://user-images.githubusercontent.com/737888/185467681-e5fdb099-d99f-454b-8d9e-0760e5a6e588.png)](https://github.com/MMMaellon/template-package/generate)
 
 Read up on the original template for more info: [https://github.com/vrchat-community/template-package/](https://github.com/vrchat-community/template-package/)
