@@ -1,4 +1,4 @@
-#if !COMPILER_UDONSHARP && UNITY_EDITOR
+#if !COMPILER_UDONSHARP && UNITY_EDITOR && UDONSHARP
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
