@@ -13,7 +13,7 @@
         "url": "https://twitter.com/MMMaellon"
     },
     "vpmDependencies": {
-        "com.vrchat.worlds": "^3.5.1",
+        "com.vrchat.worlds": "^3.5.2"
     },
     "samples": [
         {
