@@ -20,7 +20,7 @@ if confirm != "y":
     print("cancelling")
     exit()
 
-dryRun = True
+dryRun = False
 
 
 def renameFolders(root, oldString, newString):
@@ -33,8 +33,8 @@ def renameFolders(root, oldString, newString):
                 newPath = os.path.abspath(newPath)
                 if dryRun:
                     print(newPath)
-                    continue
-                os.rename(path, newPath)  # rename your file
+                else:
+                    os.rename(path, newPath)  # rename your file
 
 
 def renameFilenames(root, oldString, newString):
@@ -57,8 +57,8 @@ def renameFilenames(root, oldString, newString):
                 newFilePath = os.path.abspath(newFilePath)
                 if dryRun:
                     print(newFileName)
-                    continue
-                os.rename(filePath, newFilePath)  # rename your file
+                else:
+                    os.rename(filePath, newFilePath)  # rename your file
 
 
 def renameInFilenames(root, oldString, newString):
@@ -86,9 +86,9 @@ def renameInFilenames(root, oldString, newString):
                 for line in filedata.splitlines():
                     print(line)
                     continue
-            with open(filePath, "w") as outfile:
-                for line in filedata.splitlines():
-                    outfile.write(line)
+            else:
+                with open(filePath, "w") as outfile:
+                    outfile.write(filedata)
 
 
 roots = [os.path.join(rootPath, "Packages"), os.path.join(rootPath, ".github")]
