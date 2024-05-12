@@ -24,12 +24,12 @@ dryRun = False
 
 
 def renameFolders(root, oldString, newString):
-    for _, dirs, _ in os.walk(root):
+    for subdir, dirs, _ in os.walk(root):
         for dir in dirs:
             if dir.count(oldString) > 0:
-                path = os.path.relpath(dir, root)
+                path = os.path.join(subdir, dir)
                 path = os.path.abspath(path)
-                newPath = os.path.relpath(dir.replace(oldString, newString), root)
+                newPath = os.path.join(subdir, dir.replace(oldString, newString))
                 newPath = os.path.abspath(newPath)
                 if dryRun:
                     print(newPath)
@@ -41,18 +41,12 @@ def renameFilenames(root, oldString, newString):
     for subdir, _, files in os.walk(root):
         for filename in files:
             if filename.find(oldString) > 0:
-                subdirectoryPath = os.path.relpath(
-                    subdir, root
-                )  # get the path to your subdirectory
-                filePath = os.path.join(
-                    subdirectoryPath, filename
-                )  # get the path to your file
-                filePath = os.path.abspath(filePath)
+                filePath = os.path.join(subdir, filename)
                 newFileName = filename.replace(
                     oldString, newString
                 )  # create the new name
                 newFilePath = os.path.join(
-                    subdirectoryPath, newFileName
+                    subdir, newFileName
                 )  # get the path to your file
                 newFilePath = os.path.abspath(newFilePath)
                 if dryRun:
@@ -64,14 +58,9 @@ def renameFilenames(root, oldString, newString):
 def renameInFilenames(root, oldString, newString):
     for subdir, _, files in os.walk(root):
         for filename in files:
-            subdirectoryPath = os.path.relpath(
-                subdir, root
-            )  # get the path to your subdirectory
-            filePath = os.path.join(
-                subdirectoryPath, filename
-            )  # get the path to your file
+            filePath = os.path.join(subdir, filename)
 
-            filePath = os.path.abspath(filePath)
+            print(filePath)
 
             # Read in the file
             with open(filePath, "r") as file:
@@ -84,8 +73,8 @@ def renameInFilenames(root, oldString, newString):
             filedata = filedata.replace(oldString, newString)
             if dryRun:
                 for line in filedata.splitlines():
-                    print(line)
-                    continue
+                    # print(line)
+                    pass
             else:
                 with open(filePath, "w") as outfile:
                     outfile.write(filedata)
@@ -97,7 +86,7 @@ for root in roots:
     print("Renaming Folders: ")
     renameFolders(root, oldLowerCaseName, lowerCaseName)
     print("Renaming Files: ")
-    renameFilenames(rootPath, oldLowerCaseName, lowerCaseName)
+    renameFilenames(root, oldLowerCaseName, lowerCaseName)
     print("Renaming Inside Files: ")
-    renameInFilenames(rootPath, oldLowerCaseName, lowerCaseName)
-    renameInFilenames(rootPath, oldUpperCaseName, upperCaseName)
+    renameInFilenames(root, oldLowerCaseName, lowerCaseName)
+    renameInFilenames(root, oldUpperCaseName, upperCaseName)
