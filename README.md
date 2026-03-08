@@ -12,6 +12,21 @@ Setup:
  - Add "ACTIONTOKEN" secret
  - Open in Unity, right-click Packages/com.mmmaellon.lower-case-name/com.mmmaellon.lower-case-name.asmdef and select Create > U# Assembly Definition
 
-[![Use This Template](https://user-images.githubusercontent.com/737888/185467681-e5fdb099-d99f-454b-8d9e-0760e5a6e588.png)](https://github.com/MMMaellon/template-package/generate)
+## 🤖 Setting up the Automation
 
-Read up on the original template for more info: [https://github.com/vrchat-community/template-package/](https://github.com/vrchat-community/template-package/)
+Create a repository variable with the name and value described below.
+For details on how to create repository variables, see [Creating Configuration Variables for a Repository](https://docs.github.com/en/actions/learn-github-actions/variables#creating-configuration-variables-for-a-repository).
+Make sure you are creating a **repository variable**, and not a **repository secret**.
+
+* `PACKAGE_NAME`: the name of your package, like `com.vrchat.demo-template`.
+
+Finally, go to the "Settings" page for your repo, then choose "Pages", and look for the heading "Build and deployment". Change the "Source" dropdown from "Deploy from a branch" to "GitHub Actions".
+
+That's it!
+Some other notes:
+* We highly recommend you keep the existing folder structure of this template.
+  * The root of the project should be a Unity project.
+  * Your packages should be in the "Packages" directory.
+  * If you deviate from this folder structure, you'll need to update the paths that assume your package is in the "Packages" directory on lines 24, 38, 41 and 57.
+* If you want to store and generate your web files in a folder other than "Website" in the root, you can change the `listPublicDirectory` item [here in build-listing.yml](.github/workflows/build-listing.yml#L17).
+
