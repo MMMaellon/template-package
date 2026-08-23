@@ -1,1 +1,2 @@
+# git lfs doesn't work with VPMs so we have to disable it in here
 * filter= diff= merge= text=auto
