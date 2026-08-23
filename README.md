@@ -7,10 +7,11 @@ Includes:
  - Example Scene exporter that copies the example scene into the samples folder
 
 Setup:
+ - ⚠️IMPORTANT STEP⚠️Open in Unity, right-click Packages/com.mmmaellon.lower-case-name/com.mmmaellon.lower-case-name.asmdef and select Create > U# Assembly Definition
  - Replace all instances of "lower-case-name" with the lower-case name written without spaces
  - Replace all instances of "STARDENBURDENHARDENBART" with the Upper Case Package Name
+ - There's a rename.py python script that makes the last two steps easy
  - Add "ACTIONTOKEN" secret
- - Open in Unity, right-click Packages/com.mmmaellon.lower-case-name/com.mmmaellon.lower-case-name.asmdef and select Create > U# Assembly Definition
 
 ## 🤖 Setting up the Automation
 
