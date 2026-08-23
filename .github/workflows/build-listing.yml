@@ -31,8 +31,9 @@ jobs:
     name: build-listing
     environment:
       name: github-pages
-      packageName: com.mmmaellon.lower-case-name
       url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      packageName: com.mmmaellon.lower-case-name
     runs-on: ubuntu-latest
     steps:
 
