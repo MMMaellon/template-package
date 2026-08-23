@@ -1,1 +1,0 @@
-com.mmmaellon.lower-case-name
