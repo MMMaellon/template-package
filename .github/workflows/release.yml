@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: main
-    paths: Packages/com.mmmaellon.fancam/**
+    paths: Packages/com.mmmaellon.lower-case-name/**
 
 permissions:
   contents: write
@@ -19,8 +19,8 @@ jobs:
       contents: write
     env:
       # packagePath: Packages/${{ vars.PACKAGE_NAME }}
-      packageName: com.mmmaellon.fancam
-      packagePath: Packages/com.mmmaellon.fancam
+      packageName: com.mmmaellon.lower-case-name
+      packagePath: Packages/com.mmmaellon.lower-case-name
     steps:
 
       # Checkout Local Repository
